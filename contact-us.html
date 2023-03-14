@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no" />
+        <title>Adsense Checker | contact-us</title>
+        
+
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--bootstrap JS CDN-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" type="" href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/checker-logo.png" />
+    
+    <!--link css-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/demo.css">
+
+    </head>
+    
+    <body>
+    
+    <!--Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
+        <img  class="navbar-brand" id="logo" src="img/checker-logo.png" style="width: 40px; height: auto; " alt="Adsense_checker logo">
+        <a class="navbar-brand fs-3 ms-3" id="navbrand" href="/"><h2><span class="text-warning font-weight-bold">Adsense</span> Checker</h2></a>
+    
+        <button class="navbar-toggler me-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon" id="navbar_toggler"></span></button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-uppercase mx-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase mx-3" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase mx-3" href="about-us.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase mx-3 active" href="contact-us.html">Contact</a></li>
+            
+                <li class="nav-item">
+                <div class="dropdown">
+                <a class="btn btn-warning dropdown-toggle mx-3 fs-4" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                    <div class="dropdown-menu btn btn-outline-warning" aria-labelledby=" dropdownMenuLink">
+                    <a class="dropdown-item" href="ru/">русский</a>
+                    <a class="dropdown-item" href="fr/">Français</a>
+                    <a class="dropdown-item" href="it/">Italiano</a>
+                    <a class="dropdown-item" href="de/">Deutsch</a>
+                    <a class="dropdown-item" href="mi/">Māori</a>
+                    <a class="dropdown-item" href="pt/">Portuguese</a>
+                    <a class="dropdown-item" href="es/">Español</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!--End Responsive navbar-->
+
+    <!--Contact Form-->
+        <main class="card mt-5 mb-5 bg-dark text-warning" id="contact_card">
+            <div class="form-container">
+                <div class="card-header"><h1 class="text-left" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Contact Us</h1></div>
+                <form name="contactForm" method="post" onsubmit = "return validate()" action="#">
+                    <label for="name">* Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" >
+                    <span class="errors"></span><br>
+
+                    <label for="email">* Email</label>
+                    <input type="text" placeholder="Email address" id="email" name="email" >
+                    <span class="errors"></span><br>
+
+                    <label for="phone">* Phone</label>
+                    <input type="text" placeholder="Phone number" id="phone" name="phone" >
+                    <span class="errors"></span><br>
+   
+                    <label for="subject">* Message</label>
+                    <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+                    <span class="errors"></span><br>
+
+                    <div class="card-footer"><button type="submit" value="Submit" class="btn btn-warning">Submit</button></div>
+                </form>
+            </div>    
+        </main>
+    <!--End Contact Form-->
+
+    <!--footer-->
+        <footer class="bg-dark">
+            <strong>Adsense Checker, Copyright &copy; 2023</strong> 
+    <div class="col-auto">
+        <p class="m-0 text-center text-white"> 
+            <a href="adsensechecker.org/sitemap.xml" style="color: #FFC300; text-decoration: none;">Sitemap</a> 
+            | <a href="privacy-policy.html" style="color: #FFC300; text-decoration: none;">Privacy Policy</a>
+            | <a href="terms-and-conditions.html" style="color: #FFC300; text-decoration: none;">Terms and Conditions</a>
+            | <a href="cookie-privacy-policy.html" style="color: #FFC300; text-decoration: none;">Cookie Privacy Policy</a>
+        </p>
+    </div>
+        </footer>
+    <!--End footer-->
+
+    <!--contact form validation-->
+        <script>
+   var validate = function(e) {
+    var fields = document.querySelectorAll('.form-container textarea, .form-container input[type="text"]');
+    var regEx;
+    var removeSpan;
+    var par;
+    var check = false;
+    var val;
+    var errArr = [];
+
+    for (var i = 0; i < fields.length; i++) {
+        if (fields[i].value === "") {
+          
+            if (fields[i].nextElementSibling.classList.contains('error')) {
+              removeSpan = fields[i].nextElementSibling;
+              par = fields[i].parentNode;
+              par.removeChild(removeSpan);
+              fields[i].nextElementSibling.innerHTML = "Hmmm! " + fields[i].placeholder + " is required?";
+              fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+              check = false;
+              errArr.push(fields[i]);
+            }
+            fields[i].nextElementSibling.innerHTML = "Hmmm! " + fields[i].placeholder + " is required?";
+            fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+            check = false;
+            errArr.push(fields[i]);
+        } else {
+
+            // check if message and name values contain valid characters.
+            if (fields[i].id !== 'email' && fields[i].id !== 'phone') {
+                val = isValidChar(fields[i]);
+                if(val === false) {
+                  fields[i].nextElementSibling.innerHTML = "Are you trying to HACK ME!";
+                  fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                  check = false;
+                  errArr.push(fields[i]);
+                } else {
+                  fields[i].nextElementSibling.innerHTML = "";
+                  fields[i].style.boxShadow = "none";
+                  check = true;
+                }
+            }
+          
+            if(fields[i].id === 'phone') {
+              val = isValidPhone(fields[i]);
+              if(val === false) {
+                fields[i].nextElementSibling.innerHTML = "Hmmm! Your phone number is not valid?";
+                fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                check = false;
+                errArr.push(fields[i]);
+              } else {
+                fields[i].nextElementSibling.innerHTML = "";
+                fields[i].style.boxShadow = "none";
+                check = true;  
+              }
+            }
+
+            if (fields[i].id === 'email') {
+                val = isValidEmail(fields[i]);
+                if(val === false) {
+                    fields[i].nextElementSibling.innerHTML = "Hmmm! Your email address is not valid?";
+                    fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                    check = false;
+                    errArr.push(fields[i]);
+                } else {
+                    fields[i].nextElementSibling.innerHTML = "";
+                    fields[i].style.boxShadow = "none";
+                    check = true;
+                }
+            }
+        }
+    }
+  
+    if(check === false) {
+      var count = 0;
+      var toErr = setInterval(function() {
+        var e = errArr[0].offsetTop + -25;
+        var pos = Math.abs(e);
+        if(count < pos) {
+          count ++;
+          window.scrollTo(0, count);
+        } else {
+          clearInterval(toErr);
+        }
+      }, 1);
+    }
+    
+    return check
+
+    // Helper functions.
+    function isValidEmail(e) {
+        regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var email = e.value;
+        if (!regEx.test(email)) {
+            return false;
+        }
+    }
+
+    function isValidChar(e) {
+        regEx = /^[a-zA-Z@#$%!?^&*()_+\-=\[\]{};':"\\|,.\/? ]*$/;
+        var value = e.value;
+        if (!regEx.test(value)) {
+            return false;
+        }
+    }
+  
+    function isValidPhone(e) {
+      regEx = /^[+]?[(]?[+]?\d{2,4}[)]?[-\s]?\d{2,8}[-\s]?\d{2,8}$/;
+      var value = e.value;
+      if(!regEx.test(value)) {
+        return false;
+      }
+    }
+};
+        </script>
+    <!--end contact form validation-->
+    </body>
+</html>
